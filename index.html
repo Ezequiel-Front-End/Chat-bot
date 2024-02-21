@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How a create Chatbox with HTML and CSS</title>
+
+    <!-- link css  -->
+    <link rel="stylesheet" type="text/css" href="src/style/style.css">
+
+    <!-- link box icons  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+</head>
+<body>
+
+    <!-- content body  -->
+    <div class="chatbox-wrapper">
+        <div class="chatbox-toggle">
+            <i class='bx bx-message-dots'></i>
+        </div>
+
+        <div class="chatbox-message-wrapper">
+
+            <div class="chatbox-message-header">
+                <div class="chatbox-message-profile">
+                    <img src="src/assets/profile.avif" alt="Foto de Perfil" class="chatbox-message-image">
+
+                    <div class="chatbox-message-description">
+                        <h4 class="chatbox-message-name">Ezequiel dos Santos</h4>
+                        <p class="chatbox-message-status">online</p>
+                    </div>
+
+                </div>
+
+                <div class="chatbox-message-dropdown">
+                    <i class='bx bx-dots-vertical-rounded chatbox-message-dropdown-toggle'></i>
+                    <ul class="chatbox-message-dropdown-menu">
+                        <li>
+                            <a href="#">Search</a>
+                        </li>
+                        <li>
+                            <a href="#">Report</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="chatbox-message-content">
+                <h4 class="chatbox-message-no-message">You don't have message yet!</h4>
+            </div>
+
+            <div class="chatbox-message-bottom">
+                <form action="#" class="chatbox-message-form">
+                    <textarea rows="1" placeholder="Type message..." class="chatbox-message-input"></textarea>
+                    <button type="submit" class="chatbox-message-submit"> 
+                        <i class='bx bx-send'></i>
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    
+    <!-- script  -->
+    <script src="src/js/main.js" defer></script>
+</body>
+</html>
